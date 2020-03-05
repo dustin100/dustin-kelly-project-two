@@ -1,0 +1,68 @@
+// Footer Section
+
+.main-footer {
+	background: $dark-color;
+	color: $light-color;
+
+	h3 {
+		margin-bottom: 2rem;
+	}
+
+	p {
+		color: $light-color;
+		margin-bottom: 2rem;
+	}
+
+	&__wrapper {
+		display: flex;
+		justify-content: space-between;
+		padding: 10rem 0;
+	}
+
+	&__contact {
+		a {
+			text-decoration: none;
+			color: $light-color;
+		}
+	}
+
+	&__sub {
+		text-align: right;
+
+		input[type='text'] {
+			width: 200px;
+			height: 30px;
+			padding-right: 50px;
+
+			&:placeholder-shown {
+				font-size: 1rem;
+			}
+		}
+
+		input[type='submit'] {
+			margin-left: -50px;
+			height: 30px;
+			width: 50px;
+			background: $main-color;
+		}
+	}
+}
+
+.social {
+	display: flex;
+	li {
+		padding: 1.5rem 1.5rem 0 0;
+	}
+}
+
+// bottom logo
+.compnay-name {
+	background: $dark-color;
+	border-top: 1px solid rgba(246, 246, 246, 0.1);
+
+	h3 {
+		color: $light-color;
+		text-align: center;
+		padding: 3rem;
+	}
+}
