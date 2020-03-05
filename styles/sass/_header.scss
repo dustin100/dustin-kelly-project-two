@@ -1,0 +1,54 @@
+.showcase {
+	background: url(../imgs/home-1.jpeg) no-repeat center center/cover;
+	height: 95vh;
+}
+
+.top-nav {
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	padding: 2rem 0 0 0;
+}
+
+.logo {
+	position: absolute;
+	left: 48%;
+}
+
+.top-nav ul {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+}
+.right-nav,
+.left-nav {
+	display: flex;
+	width: 25%;
+	justify-content: space-around;
+}
+
+.shopping-cart {
+	position: relative;
+}
+
+.right-nav li i {
+	font-size: 2.2rem;
+}
+
+.shopping-cart:after {
+	content: '2';
+	display: inline-block;
+	top: 1.5rem;
+	left: 1.2rem;
+	position: absolute;
+	width: 1.2rem;
+	height: 1.2rem;
+	background: $main-color;
+	border: 1px solid #fff;
+	border-radius: 9px;
+	font-size: 1rem;
+	line-height: 1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
