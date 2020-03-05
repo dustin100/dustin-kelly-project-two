@@ -354,6 +354,11 @@ textarea {
   padding: 2rem 0 0 0;
 }
 
+.top-nav a {
+  text-decoration: none;
+  color: #333333;
+}
+
 .logo {
   position: absolute;
   left: 48%;
@@ -579,12 +584,6 @@ ul {
   padding: 5rem 0;
 }
 
-.slider-wrapper img {
-  width: 35%;
-  margin-bottom: 10px;
-  border-radius: 50%;
-}
-
 .slider-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -598,6 +597,16 @@ ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.slider-wrapper img {
+  width: 35%;
+  margin-bottom: 10px;
+  border-radius: 50%;
+}
+
+.slider-wrapper p {
+  text-align: center;
 }
 
 .services {

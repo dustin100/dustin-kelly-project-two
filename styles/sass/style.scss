@@ -89,18 +89,22 @@ ul {
 
 .slider {
 	padding: 5rem 0;
-}
-.slider-wrapper img {
-	width: 35%;
-	margin-bottom: 10px;
-	border-radius: 50%;
-}
-.slider-wrapper {
-	display: flex;
-	flex-direction: column;
-	max-width: 600px;
-	margin: auto;
-	align-items: center;
+	&-wrapper {
+		display: flex;
+		flex-direction: column;
+		max-width: 600px;
+		margin: auto;
+		align-items: center;
+
+		img {
+			width: 35%;
+			margin-bottom: 10px;
+			border-radius: 50%;
+		}
+		p {
+			text-align: center;
+		}
+	}
 }
 
 .services {
