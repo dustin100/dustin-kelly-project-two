@@ -90,6 +90,7 @@ ul {
 .slider {
 	padding: 5rem 0;
 	&-wrapper {
+		position: relative;
 		display: flex;
 		flex-direction: column;
 		max-width: 600px;
@@ -105,11 +106,24 @@ ul {
 			text-align: center;
 		}
 	}
+	&__right-arrow,
+	&__left-arrow {
+		position: absolute;
+		top: 50%;
+	}
+
+	&__right-arrow {
+		right: -75px;
+	}
+
+	&__left-arrow {
+		left: -75px;
+	}
 }
 
 .services {
 	background: url(../imgs/home-4.jpeg) no-repeat center center/cover;
-	padding: 2rem 0 5rem 0;
+	padding: 10rem 0 10rem 0;
 }
 
 .skills-wrapper {
@@ -123,7 +137,7 @@ ul {
 	display: flex;
 	margin-right: 1rem;
 	margin-bottom: 1rem;
-	max-width: 400px;
+	max-width: 350px;
 }
 
 .skills__icon {
@@ -138,30 +152,42 @@ ul {
 	margin-right: 1rem;
 	flex: 1 0 auto;
 }
+.team .wrapper {
+	max-width: 800px;
+	margin: 5rem auto;
+}
 
 .team h2 {
 	text-align: center;
-	padding: 2rem 0;
+	padding-bottom: 4rem;
 	font-size: 18px;
 }
 
 .box-wrapper {
-	display: flex;
-	flex-wrap: wrap;
-	align-items: center;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-gap: 20px;
+	margin-bottom: 3rem;
 }
 
 .text-box {
-	min-width: 440px;
-	max-width: 440px;
+	grid-column-start: 1;
+	grid-column-end: 3;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
 }
 
-.img-box {
-	margin-right: 15px;
+.box:last-child,
+.text-box {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
 }
 
 .box img {
-	width: 200px;
+	width: 100%;
 }
 
 // Drop a line section
