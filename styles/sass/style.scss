@@ -81,8 +81,23 @@ ul {
 	padding: 0.5rem;
 }
 .about-us img {
-	width: 30%;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.about-img-wrap {
+	position: relative;
+	width: 400px;
 	margin-bottom: 1rem;
+	margin: 0 auto 50px auto;
+}
+
+.about-img-wrap::before {
+	content: url(../../imgs/home-circle-text.png);
+	position: absolute;
+	top: -40px;
+	left: -92px;
+	transform: scale();
 }
 
 /* Silder section */
