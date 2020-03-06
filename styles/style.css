@@ -797,10 +797,34 @@ ul {
   height: 500px;
 }
 
+.contact-details h1 {
+  font-size: 3.7rem;
+  letter-spacing: 0.9px;
+  margin-bottom: 3rem;
+  line-height: 1;
+}
+
+.contact-details h1 span {
+  display: block;
+}
+
+.contact-details__blurb {
+  margin-bottom: 3rem;
+}
+
+.contact-details__blurb h3 {
+  margin-bottom: 1rem;
+}
+
+.contact-details__blurb p {
+  max-width: 600px;
+}
+
 .contact-details__icons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-bottom: 3rem;
 }
 
 .contact-details__icons aside {
