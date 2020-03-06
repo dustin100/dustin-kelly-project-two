@@ -345,7 +345,7 @@ textarea {
 
 .contact-page {
   background: url(../../imgs/contact-1.jpeg) no-repeat top;
-  height: 100px;
+  height: 200px;
 }
 
 .top-nav {
@@ -797,11 +797,25 @@ ul {
   height: 500px;
 }
 
+.contact-details {
+  position: relative;
+}
+
 .contact-details h1 {
+  position: relative;
   font-size: 3.7rem;
   letter-spacing: 0.9px;
   margin-bottom: 3rem;
   line-height: 1;
+}
+
+.contact-details h1::before {
+  content: '';
+  position: absolute;
+  border-bottom: 4px solid black;
+  width: 30px;
+  height: 4px;
+  top: -20px;
 }
 
 .contact-details h1 span {

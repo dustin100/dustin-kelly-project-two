@@ -244,11 +244,21 @@ ul {
 // Details and icons
 
 .contact-details {
+	position: relative;
 	h1 {
+		position: relative;
 		font-size: 3.7rem;
 		letter-spacing: 0.9px;
 		margin-bottom: 3rem;
 		line-height: 1;
+		&::before {
+			content: '';
+			position: absolute;
+			border-bottom: 4px solid black;
+			width: 30px;
+			height: 4px;
+			top: -20px;
+		}
 
 		span {
 			display: block;
