@@ -63,7 +63,7 @@ ul {
 /* about us section */
 .about-us {
 	background: $main-color;
-	padding: 5rem 0;
+	padding: 10rem 0;
 	position: relative;
 	display: flex;
 	text-align: center;
@@ -95,9 +95,9 @@ ul {
 .about-img-wrap::before {
 	content: url(../../imgs/home-circle-text.png);
 	position: absolute;
-	top: -40px;
-	left: -92px;
-	transform: scale();
+	top: -90px;
+	left: -100px;
+	transform: scale(0.8);
 }
 
 /* Silder section */
@@ -232,4 +232,12 @@ ul {
 		background: url(../imgs/home-10.jpeg) no-repeat center center/cover;
 		flex: 1 1 50%;
 	}
+}
+
+// Contact Page
+
+.contact-image {
+	background: url(../../imgs/contact-2.jpeg) no-repeat center center/cover;
+	height: 500px;
+
 }
