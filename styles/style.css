@@ -792,6 +792,11 @@ ul {
           flex: 1 1 50%;
 }
 
+nav h2 {
+  font-size: 2.6rem;
+  font-weight: 600;
+}
+
 .contact-image {
   background: url(../../imgs/contact-2.jpeg) no-repeat center center/cover;
   height: 500px;
@@ -824,6 +829,7 @@ ul {
 
 .contact-details__blurb {
   margin-bottom: 3rem;
+  margin-top: 4rem;
 }
 
 .contact-details__blurb h3 {
@@ -832,6 +838,11 @@ ul {
 
 .contact-details__blurb p {
   max-width: 600px;
+}
+
+.contact-details .titile-warpper {
+  position: absolute;
+  bottom: 205px;
 }
 
 .contact-details__icons {
@@ -854,4 +865,50 @@ ul {
 
 .contact-details__icons aside i {
   font-size: 2rem;
+}
+
+.contact-details__icons aside a {
+  text-decoration: none;
+  color: #333333;
+}
+
+.creative-form form {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  -ms-grid-rows: 20% 50% 30%;
+      grid-template-rows: 20% 50% 30%;
+  margin: 5rem 0;
+  grid-gap: 20px;
+  max-width: 800px;
+}
+
+.creative-form form input {
+  border: none;
+  background-image: none;
+  background-color: transparent;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.creative-form form input {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  margin-right: 20px;
+}
+
+.creative-form form input[id='message'] {
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 4;
+  padding: 10rem 0;
+  margin-bottom: 10rem;
+}
+
+.creative-form form input[type='submit'] {
+  border-bottom: none;
+  text-decoration: underline;
+  font-weight: bold;
+  text-align: left;
+  margin-bottom: 5rem;
 }
