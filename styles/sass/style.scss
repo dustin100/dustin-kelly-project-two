@@ -11,9 +11,15 @@ h5,
 h6 {
 	font-family: 'Montserrat', sans-serif;
 	text-transform: uppercase;
+	font-weight: bold;
 }
 
 h1 {
+	font-size: 2.6rem;
+	font-weight: 600;
+}
+
+nav h2 {
 	font-size: 2.6rem;
 	font-weight: 600;
 }
@@ -236,11 +242,6 @@ ul {
 
 // Contact Page
 
-nav h2 {
-	font-size: 2.6rem;
-	font-weight: 600;
-}
-
 .contact-image {
 	background: url(../../imgs/contact-2.jpeg) no-repeat center center/cover;
 	height: 500px;
@@ -326,7 +327,7 @@ nav h2 {
 	grid-gap: 20px;
 	max-width: 800px;
 
-	// form reset
+	// form reset for creative-form class only
 	input {
 		border: none;
 		background-image: none;
@@ -335,6 +336,8 @@ nav h2 {
 		-moz-box-shadow: none;
 		box-shadow: none;
 	}
+
+	// New styling for the forms
 
 	input {
 		border-bottom: 1px solid rgba(000, 000, 000, 0.2);
@@ -353,5 +356,68 @@ nav h2 {
 		font-weight: bold;
 		text-align: left;
 		margin-bottom: 5rem;
+	}
+}
+
+.blog-post {
+	h1 {
+		font-size: 3.7rem;
+		letter-spacing: 0.9px;
+		margin-bottom: 1rem;
+		line-height: 1;
+		margin-top: 10rem;
+	}
+
+	&__breadcrums {
+		margin-bottom: 5rem;
+
+		span {
+			font-weight: bold;
+		}
+	}
+
+	&__content {
+		margin-bottom: 10rem;
+
+		p {
+			margin-bottom: 2rem;
+		}
+
+		strong {
+			font-weight: bold;
+		}
+	}
+}
+
+.related-posts {
+	margin-bottom: 5rem;
+
+	h2 {
+		font-size: 2rem;
+		margin-bottom: 1rem;
+	}
+
+	&__gallery {
+		display: flex;
+		justify-content: space-between;
+		border-top: 1px solid rgba(000, 000, 000, 0.2);
+	}
+
+	&__posts {
+		margin-top: 4rem;
+		margin-right: 1rem;
+
+		&:last-child {
+			margin-right: 0;
+		}
+		img {
+			margin-bottom: 1rem;
+			width: 100%;
+			height: auto;
+		}
+		aside p {
+			text-transform: uppercase;
+			font-size: 1.2rem;
+		}
 	}
 }
