@@ -89,9 +89,15 @@
             <h3>Get In Touch With Us</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
             <form action="">
-                <input type="text" id="Name" placeholder="Enter Your Name">
+                <label class="visuallyHidden" for="name"></label>
+                <input type="text" id="name" placeholder="Enter Your Name">
+
+                <label class="visuallyHidden" for="email"></label>
                 <input type="email" id="email" placeholder="youremail@domain.com">
+
+                <label class="visuallyHidden" for="Subject"></label>
                 <input type="text" id="subject" placeholder="Subject (optional)">
+                <label class="visuallyHidden" for="message"></label>
                 <input type="textarea" id="message" placeholder="Your Message Goes Here">
                 <input type="submit" value="Send Message">
             </form>

@@ -348,6 +348,11 @@ textarea {
   height: 200px;
 }
 
+.blog-page {
+  background: url(../../imgs/blog-1.jpeg) no-repeat center center/cover;
+  height: 95vh;
+}
+
 .top-nav {
   position: relative;
   display: -webkit-box;
@@ -830,6 +835,7 @@ nav h2 {
 .contact-details__blurb {
   margin-bottom: 3rem;
   margin-top: 4rem;
+  padding-top: 5rem;
 }
 
 .contact-details__blurb h3 {
@@ -842,7 +848,7 @@ nav h2 {
 
 .contact-details .titile-warpper {
   position: absolute;
-  bottom: 205px;
+  bottom: 254px;
 }
 
 .contact-details__icons {
@@ -850,6 +856,7 @@ nav h2 {
   display: -ms-flexbox;
   display: flex;
   margin-bottom: 3rem;
+  margin-left: 4rem;
 }
 
 .contact-details__icons aside {
