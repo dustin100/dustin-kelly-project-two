@@ -1024,3 +1024,66 @@ ul {
   text-transform: uppercase;
   font-size: 1.2rem;
 }
+
+.blog-form h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.all-comments h2 {
+  font-size: 2rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  margin-bottom: 5rem;
+  padding-bottom: 2rem;
+}
+
+.user-comment {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.user-comment__pic {
+  margin-right: 3rem;
+}
+
+.user-comment__box {
+  position: relative;
+  background: #f6f6f6;
+  padding: 1rem 1rem 2rem 1rem;
+}
+
+.user-comment__arrow {
+  position: absolute;
+  background: transparent;
+  border: 10px solid #f6f6f6;
+  top: 10px;
+  left: -19px;
+  border-top-color: transparent;
+  border-left-color: transparent;
+  border-bottom-color: transparent;
+}
+
+.user-comment__name {
+  text-transform: uppercase;
+  padding-bottom: 0.4rem;
+  font-size: 1.2rem;
+}
+
+.user-comment__name::after {
+  content: '- Reply';
+  font-size: 1rem;
+  color: #adb7a8;
+  font-weight: bold;
+  font-style: italic;
+  text-transform: capitalize;
+}
+
+.user-comment__content {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.user-comment__timestamp {
+  font-size: 0.7rem;
+}

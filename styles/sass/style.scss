@@ -384,7 +384,7 @@ ul {
 		margin-bottom: 10rem;
 		padding-bottom: 2rem;
 		border-bottom: 1px solid rgba(000, 000, 000, 0.1);
-		
+
 		&__pic {
 			img {
 				border-radius: 50%;
@@ -394,7 +394,7 @@ ul {
 		&__info {
 			margin-right: 10%;
 			margin-top: 1rem;
-			
+
 			.top-row {
 				text-transform: uppercase;
 			}
@@ -402,7 +402,6 @@ ul {
 			.bottom-row {
 				font-size: 10px;
 				color: grey;
-				
 			}
 		}
 
@@ -454,5 +453,66 @@ ul {
 			text-transform: uppercase;
 			font-size: 1.2rem;
 		}
+	}
+}
+
+.blog-form h2 {
+	font-size: 2rem;
+	margin-bottom: 1rem;
+}
+
+.all-comments h2 {
+	font-size: 2rem;
+	border-bottom: 1px solid rgba(000, 000, 000, 0.2);
+	margin-bottom: 5rem;
+	padding-bottom: 2rem;
+}
+
+.user-comment {
+	display: flex;
+
+	&__pic {
+		margin-right: 3rem;
+	}
+
+	&__box {
+		position: relative;
+		background: #f6f6f6;
+		padding: 1rem 1rem 2rem 1rem;
+	}
+
+	&__arrow {
+		position: absolute;
+		background: transparent;
+		border: 10px solid #f6f6f6;
+		top: 10px;
+		left: -19px;
+		border-top-color: transparent;
+		border-left-color: transparent;
+		border-bottom-color: transparent;
+	}
+
+	&__name {
+		text-transform: uppercase;
+		padding-bottom: 0.4rem;
+		font-size: 1.2rem;
+
+		&::after {
+			content: '- Reply';
+			font-size: 1rem;
+			color: #adb7a8;
+			font-weight: bold;
+			font-style: italic;
+			text-transform: capitalize;
+		}
+	}
+
+	&__content {
+		font-size: 1.2rem;
+		margin-bottom: 1rem;
+	}
+
+	&__timestamp {
+		font-size: 0.7rem;
 	}
 }
