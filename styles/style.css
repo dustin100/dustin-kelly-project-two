@@ -167,8 +167,8 @@ audio:not([controls]) {
 
 html {
   font-size: 62.5%;
-  -webkit-text-size-adjust: 125%;
-  -ms-text-size-adjust: 125%;
+  -webkit-text-size-adjust: 62.5%;
+  -ms-text-size-adjust: 62.5%;
 }
 
 a:focus {
@@ -931,10 +931,47 @@ ul {
 
 .blog-post__breadcrums {
   margin-bottom: 5rem;
+  font-size: 1.2rem;
 }
 
 .blog-post__breadcrums span {
   font-weight: bold;
+}
+
+.blog-post__bio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  white-space: nowrap;
+  margin-bottom: 10rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.blog-post__bio__pic img {
+  border-radius: 50%;
+  margin-right: 1.5rem;
+}
+
+.blog-post__bio__info {
+  margin-right: 10%;
+  margin-top: 1rem;
+}
+
+.blog-post__bio__info .top-row {
+  text-transform: uppercase;
+}
+
+.blog-post__bio__info .bottom-row {
+  font-size: 10px;
+  color: grey;
+}
+
+.blog-post__bio .job-name {
+  padding-right: 20%;
 }
 
 .blog-post__content {
