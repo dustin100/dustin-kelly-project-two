@@ -26,6 +26,10 @@
 		}
 	}
 
+	&__posts ul {
+		list-style: inside;
+	}
+
 	&__sub {
 		text-align: right;
 
@@ -68,5 +72,6 @@
 		color: $light-color;
 		text-align: center;
 		padding: 3rem;
+		font-weight: lighter;
 	}
 }
