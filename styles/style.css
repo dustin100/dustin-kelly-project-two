@@ -1041,6 +1041,7 @@ ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-bottom: 5rem;
 }
 
 .user-comment__pic {
@@ -1051,6 +1052,7 @@ ul {
   position: relative;
   background: #f6f6f6;
   padding: 1rem 1rem 2rem 1rem;
+  width: 100%;
 }
 
 .user-comment__arrow {
@@ -1084,6 +1086,7 @@ ul {
   margin-bottom: 1rem;
 }
 
-.user-comment__timestamp {
-  font-size: 0.7rem;
+.user-comment__timestamp p {
+  font-size: 0.8rem;
+  color: grey;
 }
