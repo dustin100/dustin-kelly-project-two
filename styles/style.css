@@ -387,6 +387,7 @@ textarea {
       -ms-flex-pack: justify;
           justify-content: space-between;
   width: 100%;
+  overflow: hidden;
 }
 
 .right-nav,
@@ -1116,8 +1117,81 @@ ul {
 }
 
 @media screen and (max-width: 965px) {
+  .top-nav ul {
+    visibility: hidden;
+  }
+  .right-nav li i {
+    visibility: visible;
+    margin-right: 5rem;
+  }
   .blog-post__bio .job-name {
     margin-right: 10%;
     padding-right: 0;
+  }
+  .main-footer__wrapper {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-line-pack: center;
+        align-content: center;
+  }
+  .main-footer__sub {
+    width: 100%;
+    text-align: center;
+  }
+  .main-footer__sub input[type='text'] {
+    width: 300px;
+  }
+  .drop-line__content {
+    padding: 0 5rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .about-img-wrap {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+  }
+  .slider__right-arrow {
+    right: -10px;
+  }
+  .slider__left-arrow {
+    left: -10px;
+  }
+  .blog-post__bio {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .blog-post__bio .job-name {
+    margin-right: 60%;
+    margin-bottom: 5%;
+  }
+  .blog-post__bio__pic {
+    margin-bottom: 5%;
+  }
+  .drop-line {
+    height: 300px;
+  }
+  .drop-line__image {
+    display: none;
+  }
+  .box-wrapper {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+  }
+  .text-box {
+    grid-column-end: 4;
+  }
+  .contact-details .titile-warpper {
+    position: static;
+  }
+  .creative-form form {
+    display: block;
+  }
+  .creative-form form input {
+    width: 100%;
+    margin-bottom: 8rem;
+  }
+  .creative-form form input[id='message'] {
+    padding: 5rem 0;
   }
 }

@@ -535,8 +535,98 @@ ul {
 }
 
 @media screen and (max-width: 965px) {
+	.top-nav ul {
+		visibility: hidden;
+	}
+
+	.right-nav li i {
+		visibility: visible;
+		margin-right: 5rem;
+	}
+
 	.blog-post__bio .job-name {
 		margin-right: 10%;
 		padding-right: 0;
+	}
+
+	.main-footer {
+		&__wrapper {
+			flex-wrap: wrap;
+			align-content: center;
+		}
+
+		&__sub {
+			width: 100%;
+			text-align: center;
+
+			input[type='text'] {
+				width: 300px;
+			}
+		}
+	}
+
+	.drop-line__content {
+		padding: 0 5rem;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.about-img-wrap {
+		transform: scale(0.8);
+	}
+
+	.slider {
+		&__right-arrow {
+			right: -10px;
+		}
+		&__left-arrow {
+			left: -10px;
+		}
+	}
+
+	.blog-post {
+		&__bio {
+			flex-wrap: wrap;
+			.job-name {
+				margin-right: 60%;
+				margin-bottom: 5%;
+			}
+
+			&__pic {
+				margin-bottom: 5%;
+			}
+		}
+	}
+
+	.drop-line {
+		height: 300px;
+		&__image {
+			display: none;
+		}
+	}
+
+	.box-wrapper {
+		grid-template-columns: repeat(3, 1fr);
+	}
+
+	.text-box {
+		grid-column-end: 4;
+	}
+
+	.contact-details .titile-warpper {
+		position: static;
+	}
+
+	.creative-form form {
+		display: block;
+	}
+
+	.creative-form form input {
+		width: 100%;
+		margin-bottom: 8rem;
+	}
+
+	.creative-form form input[id='message'] {
+		padding: 5rem 0;
 	}
 }
