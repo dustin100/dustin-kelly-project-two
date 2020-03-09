@@ -20,25 +20,33 @@
         <!-- Main Nav Section -->
         <div class="wrapper">
             <nav class="top-nav">
+                <div class="mobile-nav">
+                    <i class="fas fa-bars"></i>
+                </div>
                 <div class="logo">
-                    <h2>Creative</h2>
+                    <h1>Creative</h1>
                 </div>
 
                 <ul>
                     <div class="left-nav">
-                        <li> <a href="index.html">Home</a></li>
-                        <li> <a href="blog.html">Blog</a></li>
-                        <li> <a href="index.html">Portfolio</a></li>
+                        <li class="nav-links"> <a href="index.html">Home</a></li>
+                        <li class="nav-links"> <a href="blog.html">Blog</a></li>
+                        <li class="nav-links"> <a href="index.html">Portfolio</a></li>
                     </div>
                     <div class="right-nav">
-                        <li> <a href="index.html">Shop</a></li>
-                        <li> <a href="contact.html">Contact</a></li>
-                        <li> <i class="fas fa-search"></i></li>
+                        <li class="nav-links"> <a href="index.html">Shop</a></li>
+                        <li class="nav-links"> <a href="contact.html">Contact</a></li>
+                        <li> <i class="fas fa-search hidden-mobile"></i></li>
                         <li class="shopping-cart"> <i class="fas fa-shopping-bag"></i></li>
                     </div>
                 </ul>
-
             </nav>
+            <div class="search-bar-sm">
+                <label class="visuallyHidden" for="site-search">Search the site:</label>
+                <input type="search" id="site-search" name="q" aria-label="Search through site content">
+
+                <button type="submit"><i class="fas fa-search"></i></button>
+            </div>
         </div>
     </header>
 

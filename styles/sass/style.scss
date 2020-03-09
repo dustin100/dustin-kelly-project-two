@@ -74,6 +74,11 @@ ul {
 	visibility: hidden;
 }
 
+.mobile-nav i {
+	font-size: 2rem;
+	visibility: hidden;
+}
+
 /* about us section */
 .about-us {
 	background: $main-color;
@@ -538,17 +543,19 @@ ul {
 	}
 }
 
-
-// Start of media queries 
+// Start of media queries
 
 @media screen and (max-width: 965px) {
-	.top-nav ul {
+	.top-nav .nav-links {
 		visibility: hidden;
 	}
 
 	.right-nav li i {
-		visibility: visible;
 		margin-right: 5rem;
+	}
+
+	.mobile-nav i {
+		visibility: visible;
 	}
 
 	.blog-post__bio .job-name {
@@ -691,6 +698,7 @@ ul {
 		visibility: visible;
 		margin: 0 auto;
 		width: 70%;
+		margin-bottom: 2rem;
 	}
 
 	.about-us {
@@ -775,8 +783,10 @@ ul {
 	.related-posts__posts:last-child {
 		display: none;
 	}
+	.user-comment {
+		flex-direction: column;
+	}
 }
-
 
 // Smaller phone view
 
@@ -800,5 +810,9 @@ ul {
 			top: 15%;
 			left: 0;
 		}
+	}
+
+	.creative-form {
+		overflow: hidden;
 	}
 }

@@ -580,6 +580,11 @@ ul {
   visibility: hidden;
 }
 
+.mobile-nav i {
+  font-size: 2rem;
+  visibility: hidden;
+}
+
 /* about us section */
 .about-us {
   background: #c3dab7;
@@ -1121,12 +1126,14 @@ ul {
 }
 
 @media screen and (max-width: 965px) {
-  .top-nav ul {
+  .top-nav .nav-links {
     visibility: hidden;
   }
   .right-nav li i {
-    visibility: visible;
     margin-right: 5rem;
+  }
+  .mobile-nav i {
+    visibility: visible;
   }
   .blog-post__bio .job-name {
     margin-right: 10%;
@@ -1246,6 +1253,7 @@ ul {
     visibility: visible;
     margin: 0 auto;
     width: 70%;
+    margin-bottom: 2rem;
   }
   .about-us {
     padding: 5rem 0;
@@ -1328,6 +1336,12 @@ ul {
   .related-posts__posts:last-child {
     display: none;
   }
+  .user-comment {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 @media screen and (max-width: 380px) {
@@ -1347,5 +1361,8 @@ ul {
   .slider__left-arrow {
     top: 15%;
     left: 0;
+  }
+  .creative-form {
+    overflow: hidden;
   }
 }
