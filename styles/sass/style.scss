@@ -80,12 +80,27 @@ ul {
 }
 
 /* about us section */
+
 .about-us {
 	background: $main-color;
 	padding: 10rem 0;
 	position: relative;
 	display: flex;
 	text-align: center;
+	position: relative;
+}
+
+.about-us span:before {
+	content: '';
+	border-left: 1px solid rgba(000, 000, 000, 0.2);
+	height: 100px;
+	width: 1px;
+	z-index: 5;
+	display: inline-block;
+	margin: 0 auto;
+	position: absolute;
+	left: 51%;
+	top: -32px;
 }
 
 .about-wrapper {
@@ -199,6 +214,20 @@ ul {
 .team .wrapper {
 	max-width: 800px;
 	margin: 5rem auto;
+	position: relative;
+}
+
+.team span:before {
+	content: '';
+	border-left: 1px solid rgba(0, 0, 0, 0.2);
+	height: 39px;
+	width: 1px;
+	z-index: 5;
+	display: inline-block;
+	margin: 0 auto;
+	position: absolute;
+	left: 50%;
+	top: -51px;
 }
 
 .team h2 {
