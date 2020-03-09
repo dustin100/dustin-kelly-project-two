@@ -1348,6 +1348,9 @@ ul {
   .logo {
     left: 22%;
   }
+  .right-nav {
+    margin-right: 60px;
+  }
   .about-img-wrap {
     -webkit-transform: scale(0.5);
             transform: scale(0.5);
