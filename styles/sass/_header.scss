@@ -22,11 +22,16 @@
 		text-decoration: none;
 		color: $dark-color;
 		padding: 1rem;
+		
 
 		&:hover {
 			text-decoration: line-through;
 		}
 	}
+}
+
+.current-page a{
+text-decoration: line-through;
 }
 
 .logo {
@@ -53,6 +58,11 @@
 
 .right-nav li i {
 	font-size: 2.2rem;
+
+	&:hover {
+		cursor: pointer;
+		opacity: 0.5;
+	}
 }
 
 .shopping-cart:after {
