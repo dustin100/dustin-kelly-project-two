@@ -414,7 +414,7 @@ textarea {
 
 .right-nav li i:hover {
   cursor: pointer;
-  color: darkorange;
+  opacity: 0.5;
 }
 
 .shopping-cart:after {
@@ -511,7 +511,7 @@ textarea {
 
 .social li:hover {
   cursor: pointer;
-  color: darkorange;
+  opacity: 0.5;
 }
 
 .compnay-name {
@@ -665,7 +665,7 @@ ul {
           transform: scale(0.8);
 }
 
-/* Silder section */
+/* slider section */
 .slider {
   padding: 5rem 0;
 }
