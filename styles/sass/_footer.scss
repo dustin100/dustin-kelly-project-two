@@ -60,6 +60,11 @@
 	display: flex;
 	li {
 		padding: 1.5rem 1.5rem 0 0;
+
+		&:hover {
+			cursor: pointer;
+			color: darkorange;
+		}
 	}
 }
 

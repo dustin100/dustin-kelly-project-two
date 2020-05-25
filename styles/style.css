@@ -374,6 +374,10 @@ textarea {
   text-decoration: line-through;
 }
 
+.current-page a {
+  text-decoration: line-through;
+}
+
 .logo {
   position: absolute;
   left: 42%;
@@ -406,6 +410,11 @@ textarea {
 
 .right-nav li i {
   font-size: 2.2rem;
+}
+
+.right-nav li i:hover {
+  cursor: pointer;
+  color: darkorange;
 }
 
 .shopping-cart:after {
@@ -500,6 +509,11 @@ textarea {
   padding: 1.5rem 1.5rem 0 0;
 }
 
+.social li:hover {
+  cursor: pointer;
+  color: darkorange;
+}
+
 .compnay-name {
   background: #333333;
   border-top: 1px solid rgba(246, 246, 246, 0.1);
@@ -550,7 +564,7 @@ ul {
   list-style: none;
 }
 
-/* Utilites */
+/* Utilities */
 .wrapper {
   max-width: 1280px;
   margin: auto;
@@ -1151,6 +1165,11 @@ ul {
 .user-comment__timestamp p {
   font-size: 0.8rem;
   color: grey;
+}
+
+.coming-soon {
+  padding: 3rem;
+  text-align: center;
 }
 
 @media screen and (max-width: 965px) {
